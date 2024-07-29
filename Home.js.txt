@@ -1,0 +1,15 @@
+﻿import React from 'react';
+import './Home.css';
+
+
+const Home = () => {
+  return (
+    <div className="home">
+      <h2>Welcome to Grocery Shop</h2>
+      <p>Your one-stop shop for fresh groceries and more!</p>
+    </div>
+  );
+};
+
+
+export default Home;

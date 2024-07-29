@@ -1,0 +1,29 @@
+﻿import React from 'react';
+import { Link } from 'react-router-dom';
+import { FaShoppingCart, FaHome, FaPhone } from 'react-icons/fa';
+import './Header.css';
+
+
+const Header = () => {
+  return (
+    <header className="header">
+      <h1>Grocery Shop</h1>
+      <nav>
+        <ul>
+          <li>
+            <Link to="/"><FaHome /> Home</Link>
+          </li>
+          <li>
+            <Link to="/products"><FaShoppingCart /> Products</Link>
+          </li>
+          <li>
+            <Link to="/contact"><FaPhone /> Contact</Link>
+          </li>
+        </ul>
+      </nav>
+    </header>
+  );
+};
+
+
+export default Header;

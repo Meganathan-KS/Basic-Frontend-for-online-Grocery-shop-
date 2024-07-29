@@ -1,0 +1,17 @@
+﻿import React from 'react';
+import './Contact.css';
+
+
+const Contact = () => {
+  return (
+    <div className="contact">
+      <h2>Contact Us</h2>
+      <p>Phone: (123) 456-7890</p>
+      <p>Email: info@groceryshop.com</p>
+      <p>Address: 123 Grocery Lane, Food City</p>
+    </div>
+  );
+};
+
+
+export default Contact;

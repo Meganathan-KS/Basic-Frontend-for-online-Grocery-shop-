@@ -1,0 +1,27 @@
+﻿import React from 'react';
+import ProductCard from '../components/ProductCard';
+import './Products.css';
+
+
+const products = [
+  { id: 1, name: 'Apple', description: 'Fresh and juicy', price: 1.5, image: '/images/apple.jpg' },
+  { id: 2, name: 'Banana', description: 'Rich in potassium', price: 1.2, image: '/images/banana.jpg' },
+  // Add more products as needed
+];
+
+
+const Products = () => {
+  return (
+    <div className="products">
+      <h2>Products</h2>
+      <div className="product-list">
+        {products.map(product => (
+          <ProductCard key={product.id} product={product} />
+        ))}
+      </div>
+    </div>
+  );
+};
+
+
+export default Products;
